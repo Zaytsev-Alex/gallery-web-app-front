@@ -4,12 +4,9 @@ const webpack = require('webpack');
 const path = require('path');
 
 const bundleFolder = "./wwwroot/assets/";
-const srcFolder = "./src/"
 
 module.exports = {
-    entry: [
-        srcFolder + "index.js" 
-    ], 
+    entry: "./src/index.jsx",
     devtool: "source-map",
     output: {
         filename: "bundle.js",

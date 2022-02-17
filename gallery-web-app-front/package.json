@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
+    "start": "webpack-dev-server",
     "dev": "webpack serve",
     "build": "webpack",
-    "start": "babel-node src/index.js"
+    "stop": "taskkill -F -IM node.exe"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +22,8 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.6",
     "style-loader": "^0.19.1",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.2.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
